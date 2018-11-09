@@ -17,6 +17,9 @@
 .navbar-brand.fixed-theme {
     font-size: 18px;
 }
+.fon_h{
+    font-size: 26px;
+}
 
 .navbar-container.fixed-theme {
     padding: 0;
@@ -29,4 +32,10 @@
 .navbar-container{
     transition: 0.8s;
     -webkit-transition:  0.8s;
+}
+#header img{
+    margin-top: -25px;
+    margin-left: -165px;
+    max-width: 130px;
+    
 }

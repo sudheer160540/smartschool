@@ -1,6 +1,6 @@
 .primaryArea{
     background-image: url(/assets/images/min.jpg);
-    height: 576px;
+    height: 560px;
     width: 100%;
     background-size: cover;
     opacity: 0.9;
@@ -304,3 +304,6 @@ body{
         font-size: 26px;
         font-weight: bold;
     }
+.row{
+    margin: 0px;
+}
