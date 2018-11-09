@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { Routes, RouterModule, ActivatedRoute, Params } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatTableModule, MatInputModule, MatPaginatorModule, MatSortModule, MatFormFieldModule, MatNativeDateModule } from '@angular/material';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule, MatTableModule, MatInputModule, MatPaginatorModule, MatSortModule, MatFormFieldModule, MatNativeDateModule  } from '@angular/material';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { CookieService } from 'angular2-cookie/core';
 import { IncidentsComponent } from './incidents/incidents.component';
@@ -55,6 +56,7 @@ const routing: Routes = [
   ],
   imports: [
     BrowserModule,
+    MatCardModule,
     FormsModule,
     RouterModule.forRoot(routing),
     BrowserAnimationsModule,

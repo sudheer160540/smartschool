@@ -181,9 +181,33 @@ body {
   background: #444;
 }
 .form-heading {
-  text-align: center;
-  background: #fff;
-  padding: 10px;
-  margin: 0;
-  color: #e58e31;
+	text-align: center;
+	background: #3578ab;
+	padding: 10px;
+	margin: 0;
+	color: #f5f6f6;
+}
+
+.buttonMargin{
+	margin-left:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
 }
