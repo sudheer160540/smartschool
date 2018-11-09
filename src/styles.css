@@ -9,3 +9,7 @@
     height: 40px;
 }
 .m-top20 { margin-top: 20px; }
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
