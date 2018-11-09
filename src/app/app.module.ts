@@ -24,9 +24,13 @@ import { LimitPipe } from './pipes/limit.pipe';
 import { OrderByPipe } from './pipes/order-by.pipe';
 import { HistoryPipe } from './pipes/history.pipe';
 import { CustomDateFilter } from './pipes/customdate.pipe';
+import { PrimaryComponent } from './primary/primary.component';
+import { SecondaryComponent } from './secondary/secondary.component';
 const routing: Routes = [
   { path: '', component: LoginComponent },
   { path: 'IncidentLogin', component: IncidentsComponent },
+  { path: 'primary', component: PrimaryComponent },
+  { path: 'secondary', component: SecondaryComponent },
 
 
 ]
@@ -43,6 +47,8 @@ const routing: Routes = [
     OrderByPipe,
     HistoryPipe,
     CustomDateFilter,
+    PrimaryComponent,
+    SecondaryComponent,
   ],
   imports: [
     BrowserModule,
