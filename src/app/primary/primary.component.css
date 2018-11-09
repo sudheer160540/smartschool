@@ -136,3 +136,44 @@ body{
     .css_buttons ul li a{
         width: 100px
     }
+    .video_css {
+        margin-top: 150px;
+    }
+    .tooltip.swing:before,
+.tooltip.swing:after {
+  transform: translate3d(0,30px,0) rotate3d(0,0,1,60deg);
+  transform-origin: 0 0;
+  transition: transform .15s ease-in-out, opacity .2s;
+}
+.tooltip.swing:after {
+  transform: translate3d(0,60px,0);
+  transition: transform .15s ease-in-out, opacity .2s;
+}
+.tooltip.swing:hover:before,
+.tooltip.swing:hover:after {
+  opacity: 1;
+  transform: translate3d(0,0,0) rotate3d(1,1,1,0deg);
+}
+.test + .tooltip > .tooltip-inner {
+    background-color: #73AD21; 
+    color: #FFFFFF; 
+    border: 1px solid green; 
+    padding: 15px;
+    font-size: 20px;
+}
+/* Tooltip on top */
+.test + .tooltip.top > .tooltip-arrow {
+    border-top: 5px solid green;
+}
+/* Tooltip on bottom */
+.test + .tooltip.bottom > .tooltip-arrow {
+    border-bottom: 5px solid blue;
+}
+/* Tooltip on left */
+.test + .tooltip.left > .tooltip-arrow {
+    border-left: 5px solid red;
+}
+/* Tooltip on right */
+.test + .tooltip.right > .tooltip-arrow {
+    border-right: 5px solid black;
+}
