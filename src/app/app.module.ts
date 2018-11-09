@@ -27,6 +27,7 @@ import { CustomDateFilter } from './pipes/customdate.pipe';
 import { PrimaryComponent } from './primary/primary.component';
 import { SecondaryComponent } from './secondary/secondary.component';
 import { Header1Component } from './header1/header1.component';
+import { FooterComponent } from './footer/footer.component';
 const routing: Routes = [
   { path: '', component: LoginComponent },
   { path: 'IncidentLogin', component: IncidentsComponent },
@@ -51,6 +52,7 @@ const routing: Routes = [
     PrimaryComponent,
     SecondaryComponent,
     Header1Component,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

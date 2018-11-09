@@ -177,13 +177,25 @@ body {
 .loginArea{ 
   position: absolute;
   right: 15%;
-  top: 15%;
-  background: #444;
+  top: 25%;
+  background: #fff;
+  width: 30%;
 }
 .form-heading {
   text-align: center;
-  background: #fff;
-  padding: 10px;
+  background: #e58e31;
+  padding: 15px 10px;
   margin: 0;
-  color: #e58e31;
+  font-size: 18px;
+  color: #fff;
+  
+  border-bottom: 3px solid #e58e31;
+}
+.formArea {
+  padding: 40px 20px;
+}
+.inputArea {
+  border: 1px solid #fff;
+  height: 35px;
+  border-radius: 0px;
 }

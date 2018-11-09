@@ -3,3 +3,9 @@
 .row{
     padding: 0px;
 }
+:focus { outline: 0 !important; }
+.btn-success {
+    width: 100px;
+    height: 40px;
+}
+.m-top20 { margin-top: 20px; }
