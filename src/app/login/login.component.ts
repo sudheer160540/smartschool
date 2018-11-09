@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router, private authGuard: AuthGuardService, private cookieService: CookieService, private GS: DepartmentService) { }
 
   ngOnInit() {
+    
   }
   login(t) {
     if(t.value.email=="primary@gmail.com" && t.value.password == "123456"){
@@ -23,6 +24,7 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['secondary']);
     }else{
       this.router.navigate(['']);
+      alert('Invalid Username and Password')
     }
     // this.authGuard.postLogin(t.value).subscribe(data => {
     //   this.loginResponse = data;
