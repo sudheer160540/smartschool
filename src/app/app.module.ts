@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { Routes, RouterModule, ActivatedRoute, Params } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatTableModule, MatInputModule, MatPaginatorModule, MatSortModule, MatFormFieldModule, MatNativeDateModule } from '@angular/material';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule, MatTableModule, MatInputModule, MatPaginatorModule, MatSortModule, MatFormFieldModule, MatNativeDateModule  } from '@angular/material';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { CookieService } from 'angular2-cookie/core';
 import { IncidentsComponent } from './incidents/incidents.component';
@@ -27,11 +28,13 @@ import { CustomDateFilter } from './pipes/customdate.pipe';
 import { PrimaryComponent } from './primary/primary.component';
 import { SecondaryComponent } from './secondary/secondary.component';
 import { Header1Component } from './header1/header1.component';
+import { FooterComponent } from './footer/footer.component';
 const routing: Routes = [
   { path: '', component: LoginComponent },
   { path: 'IncidentLogin', component: IncidentsComponent },
   { path: 'primary', component: PrimaryComponent },
   { path: 'secondary', component: SecondaryComponent },
+  { path: 'incidents', component: IncidentsComponent },
 
 
 ]
@@ -51,9 +54,11 @@ const routing: Routes = [
     PrimaryComponent,
     SecondaryComponent,
     Header1Component,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
+    MatCardModule,
     FormsModule,
     RouterModule.forRoot(routing),
     BrowserAnimationsModule,

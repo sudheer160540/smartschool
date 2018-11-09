@@ -13,15 +13,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="assets/images/slider1.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="assets/images/slider4.jpg" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="assets/images/slider2.jpg" alt="Chicago" style="width:100%;">
+        <img src="assets/images/slider6.jpg" alt="Chicago" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="assets/images/slider3.jpg" alt="New york" style="width:100%;">
+        <img src="assets/images/slider5.jpg" alt="New york" style="width:100%;">
       </div>
     </div>
 
@@ -36,33 +36,48 @@
     </a>
     </div>
     <div class="loginArea">
-  <h1 class="form-heading">login Form</h1>
+  <h1 class="form-heading">Login Form</h1>
   <div class="">
-    <div class="">
-      <div class="">
-        <h2>LOGIN FOR DEPARTMENT</h2>
-        <p>Please enter your email and password</p>
-      </div>
-      <form (submit)="login(t)" #t="ngForm">
+    <div class="formArea">
+      <!-- <form (submit)="login(t)" #t="ngForm">
 
         <div class="form-group">
 
 
-          <input type="email" class="form-control" id="email" name="email" ngModel placeholder="Email Address">
+          <input type="email" class="form-control inputArea" id="email" name="email" ngModel placeholder="Email Address">
 
         </div>
 
         <div class="form-group">
 
-          <input type="password" class="form-control" id="password" name="password" ngModel placeholder="Password">
+          <input type="password" class="form-control inputArea" id="password" name="password" ngModel placeholder="Password">
 
         </div>
-        <button type="submit" class="btn btn-primary" >Login</button>
+        <br />
+        <button type="submit" class="btn btn-success center-block" >Login</button>
 
+      </form> -->
+      
+      <form class="example-form" (submit)="login(t)" #t="ngForm">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Enter Your Email" id="email" name="email" ngModel>
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <input matInput type="password" placeholder="Enter Your Password" id="password" name="password" ngModel>
+        </mat-form-field>
+        <div class="example-button-row center-block text-center">
+        
+          <button mat-stroked-button color="primary" class="buttonMargin">Login</button>
+        
+        
+        </div>
       </form>
+      
+      
     </div>
-  </div>
-
   
 </div>
 </div>
+
+<app-footer></app-footer>

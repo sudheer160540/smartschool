@@ -177,13 +177,31 @@ body {
 .loginArea{ 
   position: absolute;
   right: 15%;
-  top: 15%;
-  background: #444;
+  top: 20%;
+  background: #fff;
+  width: 30%;
 }
 .form-heading {
-  text-align: center;
-  background: #fff;
-  padding: 10px;
-  margin: 0;
-  color: #e58e31;
+	text-align: center;
+	background: #3578ab;
+	padding: 10px;
+	margin: 0;
+	color: #f5f6f6;
+}
+.formArea {
+  padding: 40px 20px;
+}
+.inputArea {
+  border: 1px solid #fff;
+  height: 35px;
+  border-radius: 0px;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
 }
