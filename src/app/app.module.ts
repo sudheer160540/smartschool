@@ -26,6 +26,7 @@ import { HistoryPipe } from './pipes/history.pipe';
 import { CustomDateFilter } from './pipes/customdate.pipe';
 import { PrimaryComponent } from './primary/primary.component';
 import { SecondaryComponent } from './secondary/secondary.component';
+import { Header1Component } from './header1/header1.component';
 const routing: Routes = [
   { path: '', component: LoginComponent },
   { path: 'IncidentLogin', component: IncidentsComponent },
@@ -50,6 +51,7 @@ const routing: Routes = [
     CustomDateFilter,
     PrimaryComponent,
     SecondaryComponent,
+    Header1Component,
   ],
   imports: [
     BrowserModule,
