@@ -1,0 +1,27 @@
+<div class="container">
+  <h1 class="form-heading">login Form</h1>
+  <div class="login-form">
+    <div class="main-div">
+      <div class="panel">
+        <h2>LOGIN FOR DEPARTMENT</h2>
+        <p>Please enter your email and password</p>
+      </div>
+      <form (submit)="login(t)" #t="ngForm">
+
+        <div class="form-group">
+
+
+          <input type="email" class="form-control" id="email" name="email" ngModel placeholder="Email Address">
+
+        </div>
+
+        <div class="form-group">
+
+          <input type="password" class="form-control" id="password" name="password" ngModel placeholder="Password">
+
+        </div>
+        <button type="submit" class="btn btn-primary" >Login</button>
+
+      </form>
+    </div>
+  </div>

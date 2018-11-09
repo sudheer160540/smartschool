@@ -1,0 +1,101 @@
+.btn-danger{
+float: right;
+}
+.row{
+    margin: 0px
+}
+.table_data{
+    margin-top: 10px;
+    /* margin-left: 100px; */
+}
+agm-map {
+    height: 660px;
+  }
+  .backdrop_map{
+      background-color: gray;
+  }
+  .row .hover{
+      height: 300px;
+  }
+  .table_color{
+   background-color:#f3eeee;
+  }
+  .active123{
+      color: red;
+  }
+  .table thead{
+      background-color: gray;
+      color: #dedbdb;
+  }
+  .table tbody{
+      background-color:#f1f1f1;
+  }
+  .table{
+    overflow-y: auto;
+    height: 550px;
+  }
+  .btn-text{
+      color: red;
+  }
+  .grad_head  {
+    background-image: linear-gradient(#19aaeb , #79c15a);
+      height: 35px;
+      border-top: 5px;
+      border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .down_button{
+      padding: 4px 0px;
+      background-color: #fff;
+  }
+  .grad_head .col-sm-2{
+      color: #fff;
+      margin: 5px;
+  }
+  .down_button .col-sm-2 input{
+      border: 1px solid rgb(22, 22, 22);
+  }
+  .down_button .col-sm-2 select{
+    border: 1px solid rgb(22, 22, 22);
+}
+.down_button .col-sm-2 select{
+height: 28px;
+}
+.down_button .col-sm-2 input{
+    height: 28px;
+    }
+    #info_b{
+        background-color: #636060;
+        color: #fff;
+        width: 200px;
+        border-radius: 6px;
+    }
+    .update_button{
+        background-image: linear-gradient(#19aaeb , #79c15a);
+        width: 70px;
+        border-radius: 5px;
+        padding: 4px;
+        color: #fff;
+        margin-top: 20px;
+        
+    }
+    .alert-success{
+        position: absolute;
+        top: 94px;
+        margin-left: 1400px;
+    }
+    #date{
+        padding: 8px;
+    }
+    .table tbody select{
+        border-radius: 6px;
+    }
+    .table tbody td{
+        font-size: 12px;
+    }
+    .grad_head select{
+        margin-right: -570px;
+    margin-top: 5px;
+    border-radius: 10px;
+    float: right;
+    }

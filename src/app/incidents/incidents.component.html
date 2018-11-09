@@ -1,0 +1,137 @@
+<app-header></app-header>
+<div class="table_data">
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="backdrop_map">
+        <agm-map #gm [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [mapTypeId]="'hybrid'" [zoomControl]="zoomControl"
+          (mapClick)="mapClicked($event)">
+
+          <agm-marker *ngFor="let m of Data; let i = index" (markerClick)="clickedMarker(m, i)" [latitude]="m.latitude" [longitude]="m.longitude"
+            [markerDraggable]="m.draggable" [iconUrl]="m.iconUrl" (dragEnd)="markerDragEnd(m, $event)" (markerClick)="clickedMarker($event, m.label, m.city, m.severity, m.type);gm.lastOpen?.close();gm.lastOpen?.close(); gm.lastOpen = infoWindow">
+
+            <agm-info-window #infoWindow class="font-sanserif">
+              <strong class="font-sanserif">City Name: {{m.city}}</strong>
+              <br>
+              <strong class="font-sanserif">Area Name: {{m.area}}</strong>
+              <br>
+              <strong class="font-sanserif">Severity: {{m.priority}}</strong>
+              <br>
+              <strong class="font-sanserif">Type: {{m.type}}</strong>
+              <br>
+              <br>
+              <button type="button" data-backdrop="static" data-keyboard="false" class="btn btn-default bgGrey map_button" data-toggle="modal"
+                data-target="#mapView1">Escalation</button>
+            </agm-info-window>
+          </agm-marker>
+        </agm-map>
+
+      </div>
+    </div>
+    <div class="col-sm-8 table_color">
+      <div class="row grad_head">
+        <div class="col-sm-2">
+          Incidents
+        </div>
+        <div class="col-sm-7"></div>
+        <!-- <div class="col-sm-3">
+          <select name="history" id="history" [(ngModel)]="history">
+            <option value="">Incident History</option>
+            <option value="completed">completed</option>
+          </select>
+        </div> -->
+      </div>
+      <div class="row down_button">
+        <div class="col-sm-2">
+          <input type="date" id="data" [(ngModel)]="dateI" class="form-control">
+        </div>
+        <div class="col-sm-2">
+          <select class="form-control" [(ngModel)]="Priority">
+            <option value="">Priority</option>
+            <option value="High">High</option>
+            <option value="Low">Low</option>
+          </select>
+        </div>
+        <div class="col-sm-2">
+          <select class="form-control" [(ngModel)]="Status">
+            <option value="">Status</option>
+            <option value="Open">Open</option>
+            <option value="completed">completed</option>
+          </select>
+        </div>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" [(ngModel)]="search" placeholder="Search">
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3">
+          <input type="button" id="info_b" value="GET INFO" (click)="click()">
+        </div>
+      </div>
+     
+      <div class="table">
+        <table [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5" [mfSaveRowsOnPage]="true" class="table table-bordered" (mfSelectedEntities)="setSelectedEntities($event)">
+          <thead>
+            <tr>
+              <th>S N</th>
+              <th>ID</th>
+              <th>Incident</th>
+              <th>Location&nbsp;</th>
+              <th>Type&nbsp;</th>
+              <th>Priority&nbsp;</th>
+              <th style="width:120px;">Date&Time</th>
+              <th>Status</th>
+              <!-- <th> Change Status&nbsp;</th> -->
+              <th>Comment</th>
+              <th>Update</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody> 
+            <tr *ngFor="let projects of mf.data|searchList:Status | priority:Priority |searchField:search |history:history; let i = index "
+              [ngClass]="{'active123': projects.type=='Fire'}" >
+              <td >{{i+1}} </td>
+              <td> INC00{{i+1}}</td>
+              <td data-toggle="tooltip" data-placement="bottom" title="{{projects.news |titlecase}}">{{projects.news | limit :[20] |titlecase }} </td>
+              <td data-toggle="tooltip" data-placement="bottom" title="{{projects.city}}">{{projects.city | limit :[20]}}</td>
+              <td>{{projects.type |titlecase}}</td>
+              <td>{{projects.priority}}</td>
+              <td>{{projects.createdDate | date:'medium' }}</td>
+              <td>
+
+                {{projects.incidentDetails?.status }}
+                <select name="status{{i}}" id="status{{i}}" [disabled]="!projects.incidentDetails?.status" *ngIf="projects.incidentDetails?.status!='completed'" [(ngModel)]="status[i]">
+                  <option value="completed">completed</option>
+                </select>
+              </td>
+              <td>
+                <textarea name="report{{i}}" rows="3" cols="14" id="report{{i}}" [(ngModel)]="report[i]" [disabled]="!projects.incidentDetails?.status" *ngIf="projects.incidentDetails?.status!='completed'"
+                  placeholder="Enter Comment Here"></textarea>
+              </td>
+              <td>
+                <input type="button" class="update_button" value="Update"  *ngIf="projects.incidentDetails?.status!='completed'"
+                  (click)="changeStatus(projects,status[i],report[i])"> </td>
+              <td>
+                <button type="button" class="btn btn-danger" (click)="delete(projects)" >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7">
+                <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="alert alert-success" *ngIf="showdata==true">
+  <strong>Successfully updated</strong>
+</div> -->
+<!-- <div class="alert alert-danger" *ngIf="loginResponse1==false">
+  <strong>error not updated</strong>
+</div> -->

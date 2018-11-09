@@ -1,0 +1,32 @@
+<div>
+  <header>
+    <div class="row header_h">
+      <div class="col-sm-3">
+        <!-- <img _ngcontent-c1="" id="new_logo" src="../assets/images/logofire.png"> -->
+        <h2 id="new_logo1" *ngIf="Data.type=='EMS_FIRE'">Fire Department Dashboard</h2>
+        <h2 id="new_logo1" *ngIf="Data.type=='AMBULANCE'">Hospital Department Dashboard</h2>
+        <h2 id="new_logo1" *ngIf="Data.type=='POLICE'">Police Department Dashboard</h2>
+
+        <h2 id="new_logo1" *ngIf="Data.type=='TRAFFIC'">Traffic Department Dashboard</h2>
+        <h2 id="new_logo1" *ngIf="Data.type=='ERT'">ERT Department Dashboard</h2>
+        <h2 id="new_logo1" *ngIf="Data.type=='DMA'">DMA Department Dashboard</h2>
+        <h2 id="new_logo1" *ngIf="Data.type=='WSB'">WSB Department Dashboard</h2>
+        
+      </div>
+      <div class="col-sm-1">
+
+      </div>
+      <div class="col-sm-5"> 
+        <!-- <h2 style="color: #61bb97; margin-top: 30px;">
+          <b *ngIf="Data.type=='EMS_FIRE'" >FIRE DEPARTMENT DASHBOARD </b>
+          <b *ngIf="Data.type=='ERT'">ERT DEPARTMENT DASHBOARD </b>
+          <b *ngIf="Data.type=='AMBULANCE'">HEALTH DEPARTMENT DASHBOARD </b>
+        </h2> -->
+      </div>
+      <div class="col-sm-3">
+       <p (click)="logout()" class="btn-text"  >Logout</p>
+        <!-- <button class="btn btn-danger" (click)="logout()" mat-button>LOGOUT</button> -->
+      </div>
+    </div>
+  </header>
+</div>
