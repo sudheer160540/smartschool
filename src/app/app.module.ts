@@ -31,6 +31,7 @@ const routing: Routes = [
   { path: 'IncidentLogin', component: IncidentsComponent },
   { path: 'primary', component: PrimaryComponent },
   { path: 'secondary', component: SecondaryComponent },
+  { path: 'incidents', component: IncidentsComponent },
 
 
 ]
