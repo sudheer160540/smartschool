@@ -36,10 +36,10 @@
     </a>
     </div>
     <div class="loginArea">
-  <h1 class="form-heading text-uppercase">login Form</h1>
-
-  <div class="formArea">
-      <form (submit)="login(t)" #t="ngForm">
+  <h1 class="form-heading">Login Form</h1>
+  <div class="">
+    <div class="formArea">
+      <!-- <form (submit)="login(t)" #t="ngForm">
 
         <div class="form-group">
 
@@ -56,7 +56,25 @@
         <br />
         <button type="submit" class="btn btn-success center-block" >Login</button>
 
+      </form> -->
+      
+      <form class="example-form" (submit)="login(t)" #t="ngForm">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Enter Your Email" id="email" name="email" ngModel>
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <input matInput type="password" placeholder="Enter Your Password" id="password" name="password" ngModel>
+        </mat-form-field>
+        <div class="example-button-row center-block text-center">
+        
+          <button mat-stroked-button color="primary" class="buttonMargin">Login</button>
+        
+        
+        </div>
       </form>
+      
+      
     </div>
   
 </div>

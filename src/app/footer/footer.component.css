@@ -1,7 +1,7 @@
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 footer {
     background: #444;
-    border-top: 4px solid orange;
+    border-top: 4px solid #3578ab;
     padding: 40px 0;
 }
 .footerTitle {
@@ -22,6 +22,7 @@ footer {
     width: 50px;
     margin: 15px 0;
 }
+.list-none { list-style: none; }
 /** social Icons **/
 a.btn-social,
 .btn-social
