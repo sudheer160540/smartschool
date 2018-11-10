@@ -56,8 +56,12 @@ input:-webkit-autofill {
     color: #88d914;
 }
 
-
-
+.font-lightgreen{
+    color: #4dd678;
+}
+.font-yello{
+    color: #e2df51;
+}
 .font-blue{
     color: #10b6fe;
 }
@@ -73,6 +77,10 @@ input:-webkit-autofill {
     font-size: 25px;
 }
 
+.font-greatgreen{
+    color: #09b89d;
+}
+
 .font-family-robot{
     font-family: Roboto, sans-serif;;
 }
@@ -80,4 +88,15 @@ input:-webkit-autofill {
 .ourevnt-img{
     width:357px;
      height:275px;
+}
+
+.submenu-fontstyle{
+    font-size: 15px;
+
+
+}
+
+.menu-icon{
+    height: 100px;
+    width: 100px;
 }
