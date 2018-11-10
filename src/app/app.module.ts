@@ -29,6 +29,7 @@ import { PrimaryComponent } from './primary/primary.component';
 import { SecondaryComponent } from './secondary/secondary.component';
 import { Header1Component } from './header1/header1.component';
 import { FooterComponent } from './footer/footer.component';
+import { MatMenuModule} from '@angular/material/menu';
 const routing: Routes = [
   { path: '', component: LoginComponent },
   { path: 'IncidentLogin', component: IncidentsComponent },
@@ -58,6 +59,7 @@ const routing: Routes = [
   ],
   imports: [
     BrowserModule,
+    MatMenuModule,
     MatCardModule,
     FormsModule,
     RouterModule.forRoot(routing),

@@ -31,6 +31,10 @@ input:-webkit-autofill {
     font-family: Pattaya-Regular;
     src: url(assets/fonts/Pattaya-Regular.ttf);
 }
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/Roboto-Medium.ttf);
+}
 .font3{
    font-family: Pattaya-Regular
 }
@@ -52,8 +56,12 @@ input:-webkit-autofill {
     color: #88d914;
 }
 
-
-
+.font-lightgreen{
+    color: #4dd678;
+}
+.font-yello{
+    color: #e2df51;
+}
 .font-blue{
     color: #10b6fe;
 }
@@ -69,11 +77,33 @@ input:-webkit-autofill {
     font-size: 25px;
 }
 
-.font-family-olo{
-    font-family: Oleo Script;
+.font-greatgreen{
+    color: #09b89d;
+}
+
+.font-family-robot{
+    font-family: Roboto, sans-serif;;
 }
 
 .ourevnt-img{
     width:357px;
      height:275px;
+}
+
+.submenu-fontstyle{
+    font-size: 15px;
+
+
+}
+
+.menu-icon{
+    height: 100px;
+    width: 100px;
+}
+
+
+.menuicon-fontstyle{
+    text-transform: uppercase;
+    font-size: 15px;
+
 }
