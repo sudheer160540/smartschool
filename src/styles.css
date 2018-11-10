@@ -36,3 +36,32 @@ input:-webkit-autofill {
 .font2{
     font-family: Sacramento-Regular;
 }
+.font-red{
+    color: #e91e63;
+    
+}
+
+.font-green{
+    color: #88d914;
+}
+
+
+
+.font-blue{
+    color: #10b6fe;
+}
+
+.font-orange{
+    color:#fd5a0f;
+}
+.font-darkblue{
+    color: #673ab7;
+}
+.font-wait{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.font-family-olo{
+    font-family: Oleo Script;
+}

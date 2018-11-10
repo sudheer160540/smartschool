@@ -209,3 +209,10 @@ body {
 
 
 
+.childrenimage{
+  	background-image: url(/assets/images/screen.jpeg);
+    height: 576px;
+    width: 100%;
+    background-size: cover;
+    opacity: 0.9;
+}
