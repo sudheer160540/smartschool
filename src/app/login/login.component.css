@@ -181,6 +181,16 @@ body {
   background: #fff;
   width: 30%;
 }
+.loginArea1{ 
+  position: absolute;
+  right: 15%;
+  top: 4%;
+  /* background: #fff; */
+  width: 30%;
+}
+.loginArea1 p{
+font-size: 60px;
+} 
 .form-heading {
 	text-align: center;
 	background: #3578ab;
