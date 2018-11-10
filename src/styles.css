@@ -100,3 +100,10 @@ input:-webkit-autofill {
     height: 100px;
     width: 100px;
 }
+
+
+.menuicon-fontstyle{
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
