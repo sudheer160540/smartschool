@@ -39,3 +39,10 @@
     max-width: 130px;
     
 }
+
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #64575900;
+}
