@@ -308,5 +308,6 @@ body{
     margin: 0px;
 }
 .font-color{
-color: white
+color: white;
+cursor: pointer;
 }
