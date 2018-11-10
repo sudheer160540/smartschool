@@ -10,6 +10,7 @@ export class PrimaryComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  
     // this.openModal.nativeElement.click();
   }
   // func(){

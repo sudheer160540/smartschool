@@ -30,3 +30,21 @@
     transition: 0.8s;
     -webkit-transition:  0.8s;
 }
+.head{
+    font-size: 35px;
+}
+#header img{
+    margin-top: -20px;
+    /* min-width: 31px; */
+    /* float: left; */
+    max-width: 124px;
+    margin-left: -100px;
+}
+#navbar ul{
+    margin-right: -100px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #64575900;
+}

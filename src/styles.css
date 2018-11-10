@@ -14,3 +14,25 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px white inset;
 }
 .mainContentArea { margin-top: 70px; }
+
+@font-face {
+    font-family: BlackAndWhitePicture-Regular;
+    src: url(assets/fonts/BlackAndWhitePicture-Regular.ttf);
+}
+@font-face {
+    font-family: IndieFlower;
+    src: url(assets/fonts/IndieFlower.ttf);
+}
+@font-face {
+    font-family: Sacramento-Regular;
+    src: url(assets/fonts/Sacramento-Regular.ttf);
+}
+.font{
+    font-family: BlackAndWhitePicture-Regular;  
+}
+.font1{
+    font-family: IndieFlower;
+}
+.font2{
+    font-family: Sacramento-Regular;
+}
