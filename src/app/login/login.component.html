@@ -8,6 +8,7 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -23,6 +24,10 @@
       <div class="item">
         <img src="assets/images/slider5.jpg" alt="New york" style="width:100%;">
       </div>
+      <div class="item">
+          <img src="assets/images/slider2.jpg" alt="New york" style="width:100%;">
+        </div>
+      
     </div>
 
     <!-- Left and right controls -->
@@ -40,7 +45,7 @@
     <p class="font1" style="color: #94d022"> <b>For Your Kids</b> </p>
   </div>
   <div class="loginArea">
-    <h1 class="form-heading font1 ">Login Form</h1>
+    <h1 class="form-heading font1 ">LOGIN</h1>
     <div class="">
       <div class="formArea">
         <!-- <form (submit)="login(t)" #t="ngForm">
@@ -64,15 +69,20 @@
 
         <form class="example-form" (submit)="login(t)" #t="ngForm">
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Enter Your Email" id="email" name="email" ngModel>
+            <input matInput placeholder="Enter Your UserName" id="email" name="email" ngModel>
           </mat-form-field>
 
           <mat-form-field class="example-full-width">
-            <input matInput type="password" placeholder="Enter Your Password" id="password" name="password" ngModel>
+            <input matInput type="password" placeholder="Enter Your Password / PIN" id="password" name="password" ngModel>
           </mat-form-field>
-          <mat-form-field class="example-full-width">
-              <input matInput type="password" placeholder="Enter Your OTP" id="otp" name="otp" ngModel>
-            </mat-form-field>
+
+         
+              <mat-radio-group >
+                <mat-radio-button class="example-margin" value="Student">Student</mat-radio-button>
+
+                <mat-radio-button class="example-margin" value="Parant">Parant</mat-radio-button>
+              </mat-radio-group>
+            
           <div class="example-button-row center-block text-center">
 
             <button mat-stroked-button color="primary" class="buttonMargin">Login</button>
