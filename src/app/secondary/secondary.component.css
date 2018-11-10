@@ -1,6 +1,6 @@
 .primaryArea{
     background-image: url(/assets/images/s1.png);
-    height: 576px;
+    height: 520px;
     width: 100%;
     background-size: cover;
     opacity: 0.9;
@@ -132,4 +132,8 @@
 
     .m-top160{
         margin-top: 160px;
+    }
+    .top_c{
+        height: 400px;
+    background-color: #dcd6d6;
     }
