@@ -27,6 +27,13 @@ input:-webkit-autofill {
     font-family: Sacramento-Regular;
     src: url(assets/fonts/Sacramento-Regular.ttf);
 }
+@font-face {
+    font-family: Pattaya-Regular;
+    src: url(assets/fonts/Pattaya-Regular.ttf);
+}
+.font3{
+   font-family: Pattaya-Regular
+}
 .font{
     font-family: BlackAndWhitePicture-Regular;  
 }

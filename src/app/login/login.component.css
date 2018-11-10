@@ -177,7 +177,7 @@ body {
 .loginArea{ 
   position: absolute;
   right: 15%;
-  top: 20%;
+  top: 12%;
   background: #fff;
   width: 30%;
 }
@@ -215,4 +215,16 @@ body {
     width: 100%;
     background-size: cover;
     opacity: 0.9;
+}
+.container2 .row .col-sm-12{ 
+	background-image:url("/assets/images/bg.jpg");
+	height: 300px;
+} 
+.container1{
+	height: 300px;
+}
+.heading{
+	margin-top: 90px;
+		color: #ffd338;
+		font-size: 45px;
 }
