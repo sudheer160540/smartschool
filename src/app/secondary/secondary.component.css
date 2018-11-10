@@ -137,3 +137,13 @@
         height: 400px;
     background-color: #dcd6d6;
     }
+    .first{
+        max-width: 130px;
+
+    }
+    .first img{
+        max-width: 150px;
+    }
+    mat-card-title{
+        margin-left: 15px;
+    }
