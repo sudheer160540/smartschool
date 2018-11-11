@@ -276,3 +276,12 @@ font-size: 48px;
 .liststyle{list-style: none;}
 .f_left{float: left;}
 .mtop78{margin-top: 78px;}
+.sliderHeight{
+	padding-left: 0px;
+	border-bottom: 1px solid #ddd;
+	background: #f1f1f1;
+	height: 480px;
+}
+.heightwidthimg{
+	height:385px;width: 1700px;
+}
