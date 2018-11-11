@@ -332,3 +332,12 @@ cursor: pointer;
 .robot-font{
     font-family: 'Roboto', sans-serif;
 }
+.m_btm20{margin-bottom: 20px;}
+.mbtm10{margin-bottom: 10px !important;}
+.f_size20{font-size: 20px !important;}
+.height420{height: 420px;}
+.paddingRightLeft0{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.mright20{ margin-right: 20px;}
