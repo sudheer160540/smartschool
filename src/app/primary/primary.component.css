@@ -341,3 +341,8 @@ cursor: pointer;
     padding-left: 0px;
 }
 .mright20{ margin-right: 20px;}
+.bgPrimary{
+    background: gray;
+    padding: 20px;
+    padding-bottom: 30px;
+}
