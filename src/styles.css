@@ -111,3 +111,18 @@ input:-webkit-autofill {
 .mouse-pointer{
     cursor: pointer;
 }
+
+.font-lightblue{
+    color: #10b6fe;
+}
+
+
+@media(min-width:1600px){
+    .carousel{
+        height: 480px !important;
+    }
+    .heightwidthimg{
+        height:500px !important;
+    }
+
+}
