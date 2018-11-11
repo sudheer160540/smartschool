@@ -134,8 +134,21 @@
         margin-top: 160px;
     }
     .top_c{
-        height: 400px;
-    background-color: #dcd6d6;
+        height: 370px;
+    background-color: #f8f000fa;
+    }
+    .subBg{
+        background: #69f6a7;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: table;
+        text-align: center;
+        line-height: 28px;
+    }
+    .mtopbtm20{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .first{
         max-width: 130px;

@@ -152,7 +152,7 @@ body {
 }
 .carousel {
   position: relative;
-  height: 664px;
+  height: 380px;
   overflow: hidden;
 }
 
@@ -173,20 +173,14 @@ body {
 	}
 }
 .landingPage { position: relative; }
-.loginArea{ 
+/* .loginArea{ 
   position: absolute;
   right: 15%;
   top: 12%;
   background: #fff;
   width: 30%;
-}
-.loginArea1{ 
-  position: absolute;
-  right: 15%;
-  top: 4%;
-  /* background: #fff; */
-  width: 30%;
-}
+} */
+
 .loginArea1 p{
 font-size: 48px;
 } 
@@ -198,7 +192,8 @@ font-size: 48px;
 	color: #f5f6f6;
 }
 .formArea {
-  padding: 40px 20px;
+	padding: 18px 20px;
+	background: #fff;
 }
 .inputArea {
   border: 1px solid #fff;
@@ -280,3 +275,4 @@ font-size: 48px;
 .width60{ width: 60px;}
 .liststyle{list-style: none;}
 .f_left{float: left;}
+.mtop78{margin-top: 78px;}
