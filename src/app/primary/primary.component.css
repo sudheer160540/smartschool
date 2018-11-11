@@ -342,7 +342,10 @@ cursor: pointer;
 }
 .mright20{ margin-right: 20px;}
 .bgPrimary{
-    background: gray;
+    background: #ffef31;
     padding: 20px;
     padding-bottom: 30px;
+}
+.primaryslider{
+    width:1700px;height:560px !important;
 }

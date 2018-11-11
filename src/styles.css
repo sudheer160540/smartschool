@@ -118,11 +118,16 @@ input:-webkit-autofill {
 
 
 @media(min-width:1600px){
-    .carousel{
+    .loginCarousel .carousel{
         height: 480px !important;
     }
     .heightwidthimg{
         height:500px !important;
     }
 
+}
+@media(max-width:1599px){
+    .sliderHeight{
+        height: 380px !important;
+    }
 }
