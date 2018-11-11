@@ -188,7 +188,7 @@ body {
   width: 30%;
 }
 .loginArea1 p{
-font-size: 55px;
+font-size: 48px;
 } 
 .form-heading {
 	text-align: center;
@@ -214,7 +214,9 @@ font-size: 55px;
 .example-full-width {
   width: 100%;
 }
-
+.row{
+	margin:0px !important;
+}
 
 
 
@@ -246,3 +248,34 @@ font-size: 55px;
     padding-left: 0px;
 }
 .mright20{ margin-right: 20px;}
+.chemicalstyle{
+	padding: 5px;
+    background: #ff3366;
+    border-radius: 30px;
+    margin: auto;
+    margin-right: 10px;
+}
+.brainstyle{
+	padding: 5px;
+    background: #08aaf4;
+    border-radius: 30px;
+    margin: auto;
+    margin-right: 10px;
+}
+.bookstyle{
+	padding: 5px;
+    background: #fe5a27;
+    border-radius: 30px;
+    margin: auto;
+    margin-right: 10px;
+}
+.bulbstyle{
+	padding: 5px;
+    background: #89d969;
+    border-radius: 30px;
+    margin: auto;
+    margin-right: 10px;
+}
+.width60{ width: 60px;}
+.liststyle{list-style: none;}
+.f_left{float: left;}

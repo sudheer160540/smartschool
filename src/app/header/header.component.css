@@ -54,3 +54,7 @@
     font-weight: bold; 
     font-size: 40px;
 }
+span.font-yello.submenu-fontstyle.font1.f_size22:hover, span.font-lightgreen.submenu-fontstyle.font1.f_size22:hover{
+    color: #cb1542;    
+}
+.f_size22{font-size: 22px;}
