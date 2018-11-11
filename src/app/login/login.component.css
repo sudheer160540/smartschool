@@ -150,12 +150,14 @@ body {
 		left: -400%;
 	}
 }
-.carousel {
+.loginCarousel .carousel {
   position: relative;
-  height: 380px;
+  height: 548px;
   overflow: hidden;
 }
-
+.bestschool{
+	margin-top: 90px;
+}
 
 @media screen and (max-width: 768px) {
 	.container .slider .slide .caption { 
@@ -280,8 +282,11 @@ font-size: 48px;
 	padding-left: 0px;
 	border-bottom: 1px solid #ddd;
 	background: #f1f1f1;
-	height: 480px;
+	height: 548px;
 }
 .heightwidthimg{
-	height:385px;width: 1700px;
+	height:548px;width: 1700px;
+}
+.height548{
+	height:548px;
 }
